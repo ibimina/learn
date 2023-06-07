@@ -1,0 +1,165 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-accent: #5371E6;
+    --bg-accent-light: #8C80A9;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    min-height: 100vh;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.col_one {
+    gap: 0.5em;
+    width: 20%;
+    padding: 0.5em 2em;
+    border-right: 1px solid rgb(216, 214, 214);
+    border-bottom: 1px solid rgb(216, 214, 214);
+
+}
+
+.col_two {
+    justify-content: space-between;
+    width: 80%;
+    padding: 0.4em 1.5em;
+    border-bottom: 1px solid rgb(216, 214, 214);
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.logo_text {
+    color: rgb(204, 200, 200);
+    font-size: 24px;
+}
+
+.search {
+    width: 60%;
+    padding: 0.5em 2em;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid rgb(204, 200, 200);
+}
+
+.user_container {
+    gap: 2em;
+}
+
+.profile {
+    gap: 0.5em;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.grid_one {
+    width: 20%;
+    border-right: 1px solid rgb(216, 214, 214);
+
+}
+
+.link_container {
+    padding: 2em;
+    border-bottom: 1px solid rgb(216, 214, 214);
+}
+
+.mb_two {
+    margin-bottom: 1em;
+ 
+}
+
+main{
+    display: flex;
+}
+
+.homework_container {
+    padding: 3em 1.5em;
+}
+
+.accent {
+    color: var(--bg-accent);
+    font-weight: 500;
+}
+
+.accent-light {
+    color: var(--bg-accent-light);
+    font-weight: 500;
+}
+
+.gap {
+    gap: 0.5em;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.text-sm {
+    font-size: 0.9em;
+}
+
+label {
+    display: block;
+    /* margin: 0.1em 0; */
+}
+
+progress {
+    width: 100%;
+    height: 5px;
+    background-color: transparent;
+}
+
+progress::-webkit-progress-bar {
+    background-color: rgb(235, 229, 229);
+    border-radius: 45px;
+}
+
+progress::-webkit-progress-value {
+    background-color: hsl(228, 67%, 62%);
+    border-radius: 10px;
+}
+.links {
+    width: 80%;
+    padding: 2em 1em;
+}
+.topic{
+    border-radius: 8px;
+    background-color: rgb(227, 227, 246);
+    padding:0.2em 0.5em;
+}
+.active{
+    color: #f5f3f3;
+    background-color: #5371E6;
+}
