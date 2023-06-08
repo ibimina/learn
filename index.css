@@ -25,15 +25,45 @@ li {
     list-style: none;
 }
 
+label {
+    display: block;
+}
+
+/* utility */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.mb_two {
+    margin-bottom: 1em;
+}
+
+.accent {
+    color: var(--bg-accent);
+    font-weight: 500;
+}
+
+.accent-light {
+    color: var(--bg-accent-light);
+    font-weight: 500;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.text_blue {
+    color: #3555d2;
+    font-weight: 600;
+}
+
+/* header */
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.flex {
-    display: flex;
-    align-items: center;
 }
 
 .col_one {
@@ -64,14 +94,17 @@ header {
 
 .search {
     width: 60%;
-    padding: 0.5em 2em;
+    padding: 0.6em 2em;
     border-radius: 12px;
     outline: none;
-    border: 1px solid rgb(204, 200, 200);
+    border: none;
+    background: url("/assets/icons8-search.svg") no-repeat 1% center;
+    background-size: 15px;
+    background-color: #ebe5f3;
 }
 
 .user_container {
-    gap: 2em;
+    gap: 1.5em;
 }
 
 .profile {
@@ -79,15 +112,17 @@ header {
 }
 
 .avatar {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
 }
 
+/* main */
+
+/* links and scores */
 .grid_one {
     width: 20%;
     border-right: 1px solid rgb(216, 214, 214);
-
 }
 
 .link_container {
@@ -95,12 +130,7 @@ header {
     border-bottom: 1px solid rgb(216, 214, 214);
 }
 
-.mb_two {
-    margin-bottom: 1em;
- 
-}
-
-main{
+main {
     display: flex;
 }
 
@@ -108,31 +138,12 @@ main{
     padding: 3em 1.5em;
 }
 
-.accent {
-    color: var(--bg-accent);
-    font-weight: 500;
-}
-
-.accent-light {
-    color: var(--bg-accent-light);
-    font-weight: 500;
-}
-
 .gap {
     gap: 0.5em;
 }
 
-.between {
-    justify-content: space-between;
-}
-
 .text-sm {
     font-size: 0.9em;
-}
-
-label {
-    display: block;
-    /* margin: 0.1em 0; */
 }
 
 progress {
@@ -150,16 +161,289 @@ progress::-webkit-progress-value {
     background-color: hsl(228, 67%, 62%);
     border-radius: 10px;
 }
+
 .links {
     width: 80%;
-    padding: 2em 1em;
+    padding: 0em 3em 3em 2em;
 }
-.topic{
+
+.topic_container {
+    margin: 3em 0;
+}
+
+.topic {
     border-radius: 8px;
-    background-color: rgb(227, 227, 246);
-    padding:0.2em 0.5em;
+    background-color: rgb(245, 245, 249);
+    padding: 0.2em 0.5em;
+    font-size: 14px;
+    color: hsl(240, 13%, 55%);
 }
-.active{
+
+.active {
     color: #f5f3f3;
-    background-color: #5371E6;
+    background-color: #5773e6;
+}
+
+/* Courses */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+}
+
+.card {
+    padding: 1.5em 1em;
+    border-radius: 12px;
+    background-color: rgb(241, 241, 248);
+}
+
+.one {
+    width: 70%;
+}
+
+.text_lg {
+    font-size: 20px;
+}
+
+.stretch {
+    display: flex;
+}
+
+.clockicon {
+    width: 18px;
+}
+
+.clock {
+    background-color: hsl(224, 40%, 91%);
+    padding: 0.3em;
+    border-radius: 10px;
+    width: max-content;
+    font-size: 14px;
+    gap: 0.2em;
+}
+
+.bookstack {
+    width: 200px;
+}
+
+.block {
+    display: block;
+}
+
+.author_container {
+    gap: 0.5em;
+
+}
+
+.author {
+    font-size: 14px;
+    line-height: 14px;
+    color: #3c3c79;
+    /* margin-bottom: 0.5em; */
+}
+
+.date {
+    font-size: 12px;
+    color: hsl(257, 32%, 77%);
+}
+
+.ste {
+    width: 45px;
+    border-radius: 8px;
+}
+
+.two {
+    width: 30%;
+}
+
+
+
+.grid_1 {
+    grid-column: span 2;
+}
+
+.grid_two {
+    grid-column: span 1;
+}
+
+.start {
+    align-self: flex-start;
+}
+
+.woman {
+    height: 80px;
+}
+
+.end {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.grid_col_2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.theme {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    align-items: center;
+    flex-direction: column;
+}
+
+.themeimg {
+    height: 50px;
+}
+
+.video {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    background-color: #5b5cf2;
+    border-radius: 12px;
+    width: 70%;
+    color: #fff;
+    position: relative;
+
+}
+
+.grey {
+    color: #9090f2;
+}
+
+.video_aside {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.video_flex {
+    display: flex;
+    gap: 0.5em;
+}
+
+.create {
+    background-color: #4e4edb;
+    border-radius: 12px;
+    padding: 1em;
+    color: #f5f3f3;
+}
+
+.video_span_1 {
+    grid-column: 1/7;
+    padding: 1em;
+    color: #fff;
+    font-size: 20px;
+}
+
+.video .author_container {
+    grid-row: 3;
+    grid-column: 1/7;
+    padding: 1em 1em 0;
+    z-index: 8;
+}
+
+.duration {
+    position: absolute;
+    bottom: 2em;
+    right: 1.5em;
+    background: #26263e;
+    border-radius: 8px;
+    padding: 0.2em 0.5em;
+    font-size: 12px;
+}
+
+.blue_shade {
+    min-width: 50px;
+    grid-row: 1/4;
+}
+
+.dark_blue_700 {
+    background-color: #3838bc;
+    grid-column: 9;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.dark_blue_500 {
+    background-color: #4c4ce2;
+    grid-column: 8;
+}
+
+.dark_blue_400 {
+    background-color: #5656e0;
+    grid-column: 7;
+}
+
+.light_text,
+.heading {
+    font-size: 12px;
+}
+
+.heading {
+    margin-bottom: 2.5em;
+}
+
+.relative {
+    position: relative;
+    overflow: hidden;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    position: absolute;
+}
+
+.t_one {
+    bottom: 0;
+    right: -2em;
+    border-bottom: 100px solid rgb(54, 60, 174);
+    z-index: 5;
+}
+
+.t_two {
+    bottom: 0;
+    right: -2.5em;
+    border-bottom: 100px solid rgb(46, 64, 202);
+    z-index: 4;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgb(44, 61, 189);
+    position: absolute;
+    top: -2.5em;
+    right: -3.2em;
+    z-index: 6;
+}
+
+.stack_one {
+    z-index: 1000;
+    position: relative;
+}
+
+.topteachers {
+    grid-column: span 1;
+}
+
+.mb_three {
+    margin-bottom: 1em;
+}
+
+.teacher {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.light {
+    font-weight: 500;
 }
