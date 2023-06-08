@@ -298,7 +298,7 @@ progress::-webkit-progress-value {
 .video {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    background-color: #5b5cf2;
+    background-color: #6067f5;
     border-radius: 12px;
     width: 70%;
     color: #fff;
@@ -307,9 +307,11 @@ progress::-webkit-progress-value {
 }
 
 .grey {
-    color: #9090f2;
+    color: hsl(240, 19%, 72%);
 }
-
+.gray{
+    color:#9090f2;
+}
 .video_aside {
     width: 30%;
     display: flex;
