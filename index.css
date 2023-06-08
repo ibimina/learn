@@ -8,7 +8,7 @@
 
 :root {
     --bg-accent: #5371E6;
-    --bg-accent-light: #8C80A9;
+    --bg-accent-light: #645a7a;
 }
 
 body {
@@ -239,7 +239,6 @@ progress::-webkit-progress-value {
     font-size: 14px;
     line-height: 14px;
     color: #3c3c79;
-    /* margin-bottom: 0.5em; */
 }
 
 .date {
@@ -255,8 +254,6 @@ progress::-webkit-progress-value {
 .two {
     width: 30%;
 }
-
-
 
 .grid_1 {
     grid-column: span 2;
@@ -402,7 +399,7 @@ progress::-webkit-progress-value {
 
 .t_one {
     bottom: 0;
-    right: -2em;
+    right: -1.8em;
     border-bottom: 100px solid rgb(54, 60, 174);
     z-index: 5;
 }
