@@ -72,7 +72,6 @@ header {
     padding: 0.5em 2em;
     border-right: 1px solid rgb(216, 214, 214);
     border-bottom: 1px solid rgb(216, 214, 214);
-
 }
 
 .col_two {
@@ -143,7 +142,7 @@ main {
 }
 
 .text-sm {
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 progress {
@@ -232,7 +231,6 @@ progress::-webkit-progress-value {
 
 .author_container {
     gap: 0.5em;
-
 }
 
 .author {
