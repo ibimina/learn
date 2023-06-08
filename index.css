@@ -246,6 +246,7 @@ progress::-webkit-progress-value {
 
 .ste {
     width: 45px;
+    height: 35px;
     border-radius: 8px;
 }
 
